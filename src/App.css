@@ -1,0 +1,302 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*************** login-project-dk css style start ***************/
+.flex {
+  display: flex;
+}
+.margintop15 {
+  margin-top: 16px;
+}
+
+.title {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+#usersData {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#usersData td, #usersData th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#usersData tr:nth-child(even){background-color: #f2f2f2;}
+
+#usersData tr:hover {background-color: #ddd;}
+
+#usersData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fff;
+  color: black;
+}
+
+/* -------- Variables -------------------*/
+/* ----------------------------------------------------- Body -------------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  color: #4f5467;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}
+*, *::after, *::before {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+a {
+  color: #03a9f4;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.285);
+  z-index: 1001;
+}
+/* For Typography */
+.ul-base {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* ----------------------------------------------------- Clearfix -------------------------------------------------------- */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+/* ----------------------------------------------------- Header -------------------------------------------------------- */
+header {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+.header-inner {
+  width: 100%;
+  height: 45px;
+  color: #4f5467;
+  padding: 0 20px;
+  background-color: #313030;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+  min-width: 250px;
+}
+.widget-title {
+  overflow: hidden;
+  float: left;
+  color: #fff;
+  padding: 4px;
+  padding: 14px 0;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: end;
+}
+.container{
+  display: flex;
+  color:black;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 4px 4px 24px 8px #cccccc;
+  max-width:400px;
+  height:auto;
+  flex-direction: column;
+  margin:0 auto;
+  padding: 30px;
+  margin-top:10%;
+  align-items:center;
+  border-radius: 10px;
+}
+.logoutCss {
+  margin: auto;
+}
+.logoutCss img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  float: left;
+}
+
+.logoutCss .logout {
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+  
+}
+
+.logoutCss .button {
+	text-decoration: none;
+	float: right;
+  color: white;
+  width: 35px;
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden
+}
+
+.logoutCss a:hover {
+  width: 100px;
+}
+
+.logoutCss a:hover .logout{
+  opacity: .9;
+}
+
+.logoutCss a {
+  text-decoration: none;
+}
+
+.logoutCss button {
+  border: none !important;
+  outline: none !important;
+}
+
+.logoutCss button span {
+  background-color: #313030;;
+  color: #ffffff;
+}
+
+.myname {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.backdrop{
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 99999;
+}
+.modal-container{
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
+}
+.modal{
+  position: absolute;
+  max-width: 300px;
+  background-color: #fff;
+  border:gray 1px solid;
+  border-radius: 10px;
+  z-index: 9999999999;
+  margin-top: 30px;
+  padding: 20px 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.input-group input{
+  margin: 8px auto;
+  border: none;
+  border-bottom: solid 1px #888;
+  background-color: #fff;
+  outline: none;
+  width: 100%;
+}
+.w-full {
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  margin: 8px 0 !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: 8px 14px !important;
+}
+
+.modal .profileImg {
+  border-radius: 100%;
+  width:75px;
+  height:75px;
+}
